@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "122782661700",
+    "firebase_url": "https://derprojekt-8e1c2-default-rtdb.firebaseio.com",
+    "project_id": "derprojekt-8e1c2",
+    "storage_bucket": "derprojekt-8e1c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122782661700:android:ac57ec1c09da6b4d259011",
+        "android_client_info": {
+          "package_name": "com.greemlock.derprojekt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122782661700-4b4t7raa4qc92bdr5a8d8q7u1a1gq732.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.greemlock.derprojekt",
+            "certificate_hash": "5bd3fd4854edf35334999e7577b6c3887b3e6531"
+          }
+        },
+        {
+          "client_id": "122782661700-0ns0jpju4bqlcdamcjbbd9v2e6fn0ds3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlFuFuNmzwCcJfZyybSci2Ifj0JZ_c5cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122782661700-0ns0jpju4bqlcdamcjbbd9v2e6fn0ds3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122782661700:android:0a2b4a721ffd6ee1259011",
+        "android_client_info": {
+          "package_name": "com.greemlock.derprojektforadvisors"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122782661700-0ns0jpju4bqlcdamcjbbd9v2e6fn0ds3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlFuFuNmzwCcJfZyybSci2Ifj0JZ_c5cg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122782661700-0ns0jpju4bqlcdamcjbbd9v2e6fn0ds3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
