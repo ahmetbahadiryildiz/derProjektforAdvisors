@@ -29,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (FirebaseAuth.getInstance().getCurrentUser() != null){
+
+            Intent intent = new Intent(MainActivity.this,BaseActivity.class);
+            startActivity(intent);
+
+            finish();
+
+        }
         setContentView(R.layout.activity_main);
 
         Button buttonLogin = findViewById(R.id.buttonLogin);
@@ -46,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
                             FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
 
-                            Query findAdvisor = FirebaseDatabase.getInstance().getReference("advisors")
-                                    .orderByChild("advisorUID").equalTo(firebaseUser.getUid());
+                            Query findAdvisor = FirebaseDatabase.getInstance().getReference("users")
+                                    .orderByChild("userUID").equalTo(firebaseUser.getUid());
 
                             findAdvisor.addListenerForSingleValueEvent(new ValueEventListener() {
                                 @Override

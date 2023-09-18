@@ -13,7 +13,21 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.4" />
 
+    <com.sendbird.calls.SendBirdVideoView
+        android:id="@+id/video_view_fullscreen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="32dp"
@@ -42,6 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
+            android:clickable="true"
             app:layout_constraintBottom_toBottomOf="@+id/imageViewProfilePhoto"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageViewProfilePhoto"
@@ -71,4 +86,23 @@
             app:layout_constraintTop_toBottomOf="@+id/imageViewProfilePhoto" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/video_view_fullscreen"
+        app:layout_constraintStart_toStartOf="@+id/video_view_fullscreen" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="END"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/video_view_fullscreen"
+        app:layout_constraintTop_toTopOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
