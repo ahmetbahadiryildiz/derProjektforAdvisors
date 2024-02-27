@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -19,10 +18,6 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.Objects;
-
-import javax.crypto.Cipher;
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         }
         setContentView(R.layout.activity_main);
 
-        Button buttonLogin = findViewById(R.id.buttonLogin);
+        Button buttonLogin = findViewById(R.id.buttonSignIn);
         buttonLogin.setOnClickListener(view -> {
 
             EditText edittextEmail = findViewById(R.id.editTextEmail);
